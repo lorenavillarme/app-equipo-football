@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home" />
+
+
+    <group
+        android:menuCategory="container"
+        android:visible="true">
+
+
+    </group>
+
+    <item
+
+        android:title="Equipo">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/equipo"
+                    android:icon="@drawable/baseline_sports_soccer_24"
+                    android:title="Equipo" />
+
+                <item
+                    android:id="@+id/galeria"
+                    android:icon="@drawable/baseline_collections_24"
+                    android:title="Galería" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Acerca de">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/contacto"
+                    android:icon="@drawable/baseline_connect_without_contact_24"
+                    android:title="Contacto" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

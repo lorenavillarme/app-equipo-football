@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mynav"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.proyectofinal2trimestre.Fragment_Inicio"
+        android:label="fragment__inicio"
+        tools:layout="@layout/fragment__inicio" />
+    <fragment
+        android:id="@+id/equipo"
+        android:name="com.example.proyectofinal2trimestre.Fragment_equipo"
+        android:label="fragment_equipo"
+        tools:layout="@layout/fragment_equipo" >
+        <action
+            android:id="@+id/action_equipo_to_fragment_jugador"
+            app:destination="@id/fragment_jugador" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_jugador"
+        android:name="com.example.proyectofinal2trimestre.Fragment_jugador"
+        android:label="fragment_jugador"
+        tools:layout="@layout/fragment_jugador" />
+    <fragment
+        android:id="@+id/contacto"
+        android:name="com.example.proyectofinal2trimestre.Fragment_contacto"
+        android:label="fragment_contacto"
+        tools:layout="@layout/fragment_contacto" />
+    <fragment
+        android:id="@+id/galeria"
+        android:name="com.example.proyectofinal2trimestre.Fragment_galeria"
+        android:label="Fragment_galeria" >
+        <action
+            android:id="@+id/action_fragment_galeria_to_fragment_foto"
+            app:destination="@id/fragment_foto" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_foto"
+        android:name="com.example.proyectofinal2trimestre.Fragment_foto"
+        android:label="Fragment_foto" />
+</navigation>
